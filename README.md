@@ -9,7 +9,7 @@ Provides an easy way to fill a DOMDocument with an array
           1 => "text2"
         )));
 
-    $dom = $this->createDom();
+    $dom = new \DOMDocument('1.0', 'utf-8');
 
     PhpDomUtils::fillDom($dom, $array);
 
