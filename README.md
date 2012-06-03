@@ -1,5 +1,7 @@
 # Php Dom Utils #
 
+[![Build Status](https://secure.travis-ci.org/tonivdv/PhpDomUtils.png?branch=master)](http://travis-ci.org/tonivdv/PhpDomUtils)
+
 Provides an easy way to fill a DOMDocument with an array
 
     $array = array(
