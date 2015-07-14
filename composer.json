@@ -1,0 +1,19 @@
+{
+  "name": "tonivdv/php-dom-utils",
+  "license": "MIT",
+  "description": "Provides an easy way to fill a DOMDocument with an array",
+  "require-dev": {
+    "phpunit/phpunit": "~4.7"
+  },
+  "authors": [
+    {
+      "name": "Toni Van de Voorde",
+      "email": "toni.vdv@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "PhpDomUtils": "src/"
+    }
+  }
+}

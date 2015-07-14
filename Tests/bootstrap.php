@@ -1,14 +1,15 @@
 <?php
-/**
- * User: Toni Van de Voorde (toni [dot] vdv [AT] gmail [dot] com)
- * Date: 2/06/12
- * Time: 11:31
- */
 
-spl_autoload_register(function ($class) {
-  if (0 === strpos(ltrim($class, '/'), 'ToniVdv\PhpDomUtils')) {
-    if (file_exists($file = __DIR__.'/../'.substr(str_replace('\\', '/', $class), strlen('ToniVdv\PhpDomUtils')).'.php')) {
-      require_once $file;
-    }
-  }
-});
+if (!($loader = @include __DIR__ . '/../vendor/autoload.php')) {
+    die(<<<EOT
+You need to install the project dependencies using Composer:
+$ wget http://getcomposer.org/composer.phar
+OR
+$ curl -s https://getcomposer.org/installer | php
+$ php composer.phar install --dev
+$ phpunit
+EOT
+    );
+}
+
+$loader->add('PhpDomUtils\Tests', __DIR__);
