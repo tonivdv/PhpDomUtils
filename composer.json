@@ -13,7 +13,8 @@
   ],
   "autoload": {
     "psr-0": {
-      "PhpDomUtils": "src/"
+      "PhpDomUtils": "src/",
+      "PhpDomUtils/Tests": "tests/"
     }
   }
 }
